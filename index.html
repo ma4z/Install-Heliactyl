@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heliactyl Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a202c;
+            color: #e2e8f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #2d3748;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #cbd5e0;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 1.875rem;
+            margin-bottom: 1rem;
+            color: #a0aec0;
+        }
+        pre {
+            background-color: #4a5568;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1rem;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.875rem;
+            color: #cbd5e0;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-3xl font-bold">Heliactyl Documentation</h1>
+        </header>
+       
+        </section>
+        <section class="section">
+            <h2 class="text-2xl font-semibold">Dependencies</h2>
+            <p class="mb-4">Before installing Heliactyl, make sure you have the following dependencies installed on your system:</p>
+            <pre><code class="text-sm">
+Ubuntu / Debian
+
+# Updating the VPS
+sudo apt update
+# Installing Nodejs
+sudo apt install nodejs
+sudo apt install npm 
+# Installing git
+sudo apt install git
+            </code></pre>
+        </section>
+        <section class="section">
+            <h2 class="text-2xl font-semibold">Installation</h2>
+            <p class="mb-4">The following commands will download the Heliactyl Dashboard into <code>/etc/heliactyl</code> and use npm to install the required packages:</p>
+            <pre><code class="text-sm">
+cd /etc
+git clone https://github.com/heliactyloss/heliactyl
+cd heliactyl
+npm install
+            </code></pre>
+        </section>
+        <section class="section">
+            <h2 class="text-2xl font-semibold">Setup Complete</h2>
+            <p class="mb-4">All you need to do now is start Heliactyl:</p>
+            <pre><code class="text-sm">
+node .
+            </code></pre>
+        </section>
+  <section class="section">
+            <h2 class="text-2xl font-semibold">Configure</h2>
+            <p class="mb-4">Now you can go in settings.json Where you Can add Pterodactyl Panel Domain and ptla_key****** / Discord Auth Settings </p>
+    </div>
+</body>
+</html>
